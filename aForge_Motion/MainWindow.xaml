@@ -1,0 +1,27 @@
+﻿<Window x:Class="labo_op1_beweging_140220.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:labo_op1_beweging_140220"
+        mc:Ignorable="d"
+        Title="Movement detector" Height="400" Width="700"
+        Loaded="Window_Loaded"
+        Closed="Window_Closed">
+    <StackPanel Margin="10">
+        <GroupBox Header="Camera's">
+            <StackPanel>
+                <Grid>
+                    <Image x:Name="frameHolderSimple" Margin="10" Height="200" Width="300" HorizontalAlignment="Left"></Image>
+                    <Image x:Name="frameHolderBlob" Margin="10" Height="200" Width="300" HorizontalAlignment="Right"></Image>
+                </Grid>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Action" Height="86">
+            <StackPanel>
+                <Label HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="lblActionSimple"></Label>
+                <Label HorizontalAlignment="Left" VerticalAlignment="Bottom" Name="lblMotion"></Label>
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Window>
